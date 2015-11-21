@@ -362,8 +362,6 @@ move_files()
 # Deletes changelist files with value "D"
 delete_changelist_files()
 {
-	local module="$1"
-	local module_dir="$MODGIT_DIR/$module"
 	changelist="$1"
 
 	[ $DRY_RUN -eq 1 ] && echo_b "Would remove changelist files:" || echo_b "Removing changelist files:"
